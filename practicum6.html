@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Bloom</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6ef;
+    color: #274d32;
+}
+
+header {
+    background: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: #664497;
+    text-shadow: 2px 3px 2px #83cbe8;
+}
+
+nav a {
+    color: #294532;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    text-shadow: 2px 3px 2px #95f0c4;
+}
+
+.intro {
+    color: #254b27;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Main garden image */
+
+.garden-image {
+    position: relative;
+    height: 470px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.20)), url("Urban_Bloom.jpg") center/cover no-repeat;
+}
+
+/* Permanent labels on image */
+
+.image-label {
+    position: absolute;
+    background: rgba(255,255,255,.92);
+    color: #285638;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    box-shadow: 0 3px 12px #0002;
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Matching buttons */
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0 35px;
+    z-index: 2;
+}
+
+.button-group a {
+    display: inline-block;
+    background: #315c3b;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.button-group a:hover {
+    background: #b17b50;
+}
+
+/* Content sections */
+
+.content-section {
+    background: white;
+    padding: 28px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000a;
+    scroll-margin-top: 20px;
+}
+
+.content-section h2 {
+    color: #315c3b;
+    margin-bottom: 12px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    color: #5e6c60;
+}
+
+.content-section ul {
+    margin: 12px 0 0 22px;
+    line-height: 1.9;
+    color: #5e6c60;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #68756b;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .garden-image {
+        height: 380px;
+    }
+
+    .image-label {
+        font-size: 12px;
+        padding: 9px 10px;
+    }
+
+    .button-group a {
+        padding: 12px;
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <p id="logo"> Urban Bloom </p>
+</header>
+
+<main class="container">
+
+    <h1>Welcome to Urban Bloom</h1>
+
+    <p class="intro">
+        Everything you need to grow, nurture and beautify
+        your garden in one place.
+    </p>
+
+    <!-- Image with five permanent labels -->
+
+    <div class="garden-image">
+
+        <a href="#saplings" class="image-label top-left">
+            Saplings
+        </a>
+
+        <a href="#equipment" class="image-label top-right">
+            Garden Equipments
+        </a>
+
+        <a href="#about" class="image-label center">
+            About Us
+        </a>
+
+        <a href="#tips" class="image-label bottom-left">
+            Gardening Tips
+        </a>
+
+        <a href="#installation" class="image-label bottom-right">
+            Installation Help
+        </a>
+
+    </div>
+
+    <!-- Matching clickable buttons -->
+
+    <div class="button-group">
+        <a href="#saplings">Saplings</a>
+        <a href="#equipment">Garden Equipments</a>
+        <a href="#about">About Us</a>
+        <a href="#tips">Gardening Tips</a>
+        <a href="#installation">Installation Help</a>
+    </div>
+
+    <!-- Related content opens when clicked -->
+
+    <section class="content-section" id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Urban Bloom! We help garden lovers create beautiful green spaces. Discover plants, gardening supplies and helpful 
+            advice to make your garden flourish.We are your trusted destination for smart gardening and farming tools! 
+            We are a team dedicated to helping people grow healthy plants and create greener, more sustainable spaces. 
+            Our aim is to make gardening and farming easier, smarter, and more enjoyable for everyone, from beginners to experienced farmers. 
+            We provide information about modern gardening techniques, smart irrigation systems, soil sensors, and useful farming equipment. 
+            At Urban Bloom, we believe that technology and nature can work together to build a greener future. 
+            Our mission is to encourage people to grow more plants, save water, use resources wisely, and make sustainable gardening and 
+            farming a part of everyday life. Together, let's grow a greener world with Urban Bloom!
+        </p>
+    </section>
+
+    <section class="content-section" id="saplings">
+        <h2>Saplings</h2>
+        <p>
+            Explore young plants and saplings for your home garden.
+        </p>
+        <ul>
+            <li>Flowering plant saplings</li>
+            <li>Fruit tree saplings</li>
+            <li>Indoor plants</li>
+            <li>Herbs and vegetable seedlings</li>
+        </ul>
+    </section>
+
+    <section class="content-section" id="equipment">
+        <h2>Garden Equipments</h2>
+        <p>Find useful tools to care for your garden.</p>
+        <ul>
+            <li>Garden pots and planters</li>
+            <li>Watering cans and hoses</li>
+            <li>Pruning shears and hand tools</li>
+            <li>Soil, compost and fertilizers</li>
+        </ul>
+    </section>
+
+    <section class="content-section" id="tips">
+        <h2>Gardening Tips</h2>
+        <ul>
+            <li>Choose plants suitable for your sunlight conditions.</li>
+            <li>Water plants according to their individual needs.</li>
+            <li>Use well-draining soil and suitable compost.</li>
+            <li>Remove dead leaves and inspect plants regularly.</li>
+        </ul>
+    </section>
+
+    <section class="content-section" id="installation">
+        <h2>Installation Help</h2>
+        <p>
+            Get guidance on setting up your garden, arranging
+            planters, preparing soil and creating a home gardening space.
+        </p>
+        <ul>
+            <li>Garden bed setup</li>
+            <li>Pot and planter arrangement</li>
+            <li>Watering system setup</li>
+            <li>Balcony and terrace garden planning</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p id="copyright">&copy; Rights reserved by Urban Bloom | Grow Green, Live Beautiful </p>
+</footer>
+
+</body>
+</html>
